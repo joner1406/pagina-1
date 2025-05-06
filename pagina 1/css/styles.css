@@ -1,0 +1,42 @@
+body {
+  background-color: #dbd7d7;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar {
+  background-color: #b32f2f;
+  color: #000;
+}
+.container, .contenido-principal, .perfil-contacto {
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #cce6ff;
+}
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+  color: #cce6ff;
+}
+body.dark-mode .container,
+body.dark-mode .contenido-principal,
+body.dark-mode .perfil-contacto {
+  background-color: #1e1e2e;
+  color: #cce6ff;
+#modo-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+}
+body.dark-mode #modo-btn {
+  background-color: #ddd;
+  color: #000;
+}
+  
